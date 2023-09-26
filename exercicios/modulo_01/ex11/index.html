@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Ajustáveis e Audios</title>
+</head>
+<body>
+    <h1>Ajuste de imagens para diferentes dispositivos</h1>
+    <p>Tente abrir este site em diferentes dispositivos ou apenas mude o tamanho do seu navegador.</p>
+
+    <!--Dentro da tag <picture> primeiro coloca-se a imagem grande com a tag <img>, depois sempre por cima usa-se a tag "source:media:type" 
+    com os pixeis maximos desejados antes de trocar para a imagem com o próximo tamanho menor-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png"><!--Por fim a imagem pequena-->
+        <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png"><!--Depois a imagem media-->
+        <img src="imagens/grande.png" alt="imagem grande"><!--Primeiro a imagem grande-->
+    </picture>
+
+    <h1>Reproduzir audio</h1>
+    <p>Vamos aprender a reproduzir um audio num site.</p>
+    
+    <audio src="midia/dyalla.mp3" controls autoplay></audio> <!--Esta é a primeira forma, controls e autoplay sao necessarios-->
+    
+    <!--Esta é a segunda forma, usando a tag "source:src"--> 
+    <audio preload="metadata">
+        <!--existem varios types: .mp3-> audio/mpeg; .ogg-> audio/ogg; .wav-> audio/wav-->
+        <source src="midia/dyalla.mp3" type="audio/mpeg">
+        <!--Caso o navegador nao abra o audio em nenhum dos formatos dá-se a opcao ao user de fazer download do audio-->
+        <p>Infelizmente o seu navegador nao consegue reproduzir audio. <a href="midia/dyalla.mp3" download="dyalla.mp3">Baixe o audio aqui</a></p>
+    </audio>
+</body>
+</html>

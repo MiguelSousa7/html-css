@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Usar links externos</h1>
+
+    <p>A tag &lt;a&gt; significa âncora e serve pra fazer a ligação para um link externo ao site.</p>
+    
+    <!--target vai fazer com q o link q foi clicado abra numa pagina nova, para q nao se sobreponha ao meu site-->
+    <p>Por exemplo posso aceder ao<a href="https://gustavoguanabara.github.io/" target="_blank" rel="external"> repositório do github do Guanabara.</a></p>
+    
+    <p>Este <a href="https://youtube.com/cursoemvideo/">link do yt</a> depois de ser aberto vai se sobrepor a este site ao invés de abrir numa página nova, 
+    tornando-se inconveniente.</p> 
+    
+    <h1>Usar links internos</h1>
+
+    <p>Esta foi a primeira página do site. Se quiseres podes aceder à minha <a href="pag02.html" rel="next">segunda página</a>.</p>
+    
+    <p>Também pode aceder à nossa <a href="noticias/pag03.html" rel="next">página de notícias</a>.</p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <!--para fazer download usa-se o type + (media type da iana.org) ou o download + (nome do ficheiro)-->
+        <!--no pdf n está a funcionar pq o navegador abre sem precisar de download, recusando o download-->
+        <li><a href="slide da aula/10 - Ligações em toda parte.pdf" type="application/pdf" target="_blank">Baixar a aula em pdf</a></li>
+        <li><a href="slide da aula/pdf_compactado.zip" download="pdf_compactado.zip">Aula compactada em zip</a></li>
+    </ul>
+</body>
+</html>

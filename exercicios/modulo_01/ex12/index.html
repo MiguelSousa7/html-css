@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video em HTML5</title>
+</head>
+<body>
+    <h1>Inserir videos hospedados localmente</h1>
+    <p>Este video está hospedado no meu próprio servidor, o primeiro é em .mp4 e o segundo é em .webm.</p>
+    <p>O terceiro video é outra forma de colocar um video num site.</p>
+    
+    <!--Primeira forma-->
+    <p>
+        <video src="midia/Folha-Video.mp4" height="400" controls></video>
+        <video src="midia/Folha-Video.webm" height="400" controls></video>
+    </p>
+
+    <!--Segunda forma-->
+    <video controls poster="imagens/media.png" height="400">
+        <source src="midia/Folha-Video.mp4" type="video/mp4">
+        <source src="midia/Folha-Video.webm" type="video/webm">
+        <p>O seu navegador não consegue reproduzir o video. <a href="midia/Folha-Video.mp4" download="Folha-Video.mp4">Faça download do video aqui</a></p>
+    </video>
+        
+    <h1>Inserir videos do yt num site</h1>
+    <p>Basta ir a um video e na opção de partilhar escolhe-se "incoporar" e copia-se o código dado.</p>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=BOBTvwHC7o0E-Dcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
