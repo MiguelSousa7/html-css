@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical </title>
+    <style>
+        #container{
+            position: relative; /*a "div" que contém a tag que queremos centralizar, tem a posicao relativa*/
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            background-position: center center;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            position: absolute; /*a tag que queremos centralizar tem posição absoluta, permitindo usar os atributos "left" e "top"
+            que indicam qual a psoição do canto esquerdo superior em relação á div em q está contida*/
+            background-color: yellow;
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            background-position: center center;
+            height: 200px;
+            width: 400px;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%); /* faz uma translação a partir do centro da tag */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
