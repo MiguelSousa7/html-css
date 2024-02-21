@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            height: 200px;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: rgb(130, 208, 234);
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .posição{
+                width: 100px;
+                text-align: center;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .estado{
+            text-align: center;
+        }
+
+        .populacao{
+            text-align: right;
+        }
+
+        #tfoot_titulo_1 {
+            border-right: 0px;
+        }
+
+        #tfoot_titulo_2 {
+            border-left: 0px;
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+            TR, TD, TH
+            TBODY
+            TR, TD, TH
+            TFOOT
+            TR, TD, TH
+    -->
+    
+    <table>
+        <thead>
+            <tr>
+                <th class="posição">Posição</th>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>            
+        </thead>
+        <tbody>
+            <tr>
+                <td class="posição">1</td>
+                <td class="estado">São Paulo</td>
+                <td class="populacao">45 919 049</td>
+            </tr>
+            <tr>
+                <td class="posição">2</td>
+                <td class="estado">Minas Gerais</td>
+                <td class="populacao">21 168 791</td>
+            </tr>
+            <tr>
+                <td class="posição">3</td>
+                <td class="estado">Rio Janeiro</td>
+                <td class="populacao">17 264 953</td>
+            </tr>
+            <tr>
+                <td class="posição">4</td>
+                <td class="estado">Bahia</td>
+                <td class="populacao">14 873 064</td>
+            </tr>
+            <tr>
+                <td class="posição">5</td>
+                <td class="estado">Paraná</td>
+                <td class="populacao">11 433 957</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th id="tfoot_titulo_1"></th>
+                <th id="tfoot_titulo_2">Total de Habitantes</th>
+                <td class="populacao"><strong>108 467 244</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
