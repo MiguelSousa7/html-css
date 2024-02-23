@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            height: 300px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        thead{
+            background-color: lightgray;
+        }
+        
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .nome{
+            background-color: chocolate;
+        }
+
+        .idade{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas: como estelizar uma coluna inteira ao usar a tag colgroup</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="profissao">
+        </colgroup>
+
+        <caption>Registo</caption>
+
+        <thead>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio Rosmaninho</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Pedreiro</td>
+            </tr>
+            <tr>
+                <td>Joana Santos</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Estudante Medicina</td>
+            </tr>
+            <tr>
+                <td>Rodrigo Carvalho</td>
+                <td>M</td>
+                <td>46</td>
+                <td>Engenheiro Civil</td>
+            </tr>
+            <tr>
+                <td>Margarida Gonçalves</td>
+                <td>F</td>
+                <td>34</td>
+                <td>Jogadora de futebol</td>
+            </tr>
+            <tr>
+                <td>Gonçalo Matreiro</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Empreendedor</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
